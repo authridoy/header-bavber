@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    background: #444;
+}
+
+/*================== java shkhun =================*/
+
+
+.header-area{
+    background-color: aliceblue;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    z-index: 8;
+}
+.header-logo img{
+    width: 134px;
+}
+.menu-trigger{
+    padding: 13px 0;
+}
+.menu-trigger span{
+    cursor: pointer;
+    font-size: 43px;
+    color: rgb(88, 86, 86);
+}
+.scharch-trigger{
+    padding: 13px 0;
+}
+.scharch-trigger span{
+    cursor: pointer;
+    font-size: 43px;
+    color: rgb(88, 86, 86);
+}
+.off-canvas-menu{
+    position: fixed;
+    top: 0;
+    left: -300px;
+    opacity: 0;
+    visibility: hidden;
+    width: 300px;
+    height: 100%;
+    background: #f4f4f4;
+    z-index: 9;
+    padding: 40px;
+    transition: .3s;
+}
+.off-canvas-menu.show-off-canvas-menu{
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+}
+
+
+.menu-close span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    cursor: pointer;
+}
+.off-canvas-menu a{
+    text-decoration: none;
+    color: #544646;
+}
+.menu-logo a{
+    font-size: 30px;
+    padding: 5px;
+    border: 1px solid #544646;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.off-canvas-menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 38px;
+    line-height: 2;
+}
+.off-canvas-menu ul a{
+    font-weight: 400;
+}
+.off-canvas-menu a:hover{
+    opacity: .5;
+}
